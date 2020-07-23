@@ -1,0 +1,52 @@
+## Docker version
+version 2.2.0.5(43884)
+Engine 19.03.8
+Kubernetes: v1.15.5
+https://download.docker.com/mac/stable/43884/Docker.dmg
+
+## install homebrew
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+## helm v2.122.3
+https://github.com/helm/helm/releases/tag/v2.12.3
+https://get.helm.sh/helm-v2.12.3-darwin-amd64.tar.gz
+https://v2.helm.sh/docs/install/
+
+unzip helm and move "helm" into /usr/local/bin
+$ helm version
+$ helm init
+
+## Add AO helm repo
+$ helm repo add aorelease http://ao-charts.tidalsoft.local/release
+$ helm repo add aodev http://ao-charts.tidalsoft.local/dev
+$ helm repo add aoprerelease http://ao-charts.tidalsoft.local/prerelease
+$ helm repo update
+$ helm search aodev/action-orchestrator-local -l
+
+## Create a namespace for AO installation
+$  kubectl create namespace cisco
+$ kubectl create secret docker-registry suite-image-pull-secret --docker-username=multicloudsuite.gen \
+--docker-password=AKCp5aTvLmuvA2d1eRkiehsSAySuWZiyEv76bczZWzHe7bq5W96drHsmUzKus6v2ZsYXqMFje \
+--docker-email=suite@cisco.com --docker-server=devhub-docker.cisco.com -n cisco
+
+## Install cert-manager
+$ helm install --name cert-manager stable/cert-manager --version v0.5.2 --namespace kube-system
+
+## Get AO dev available versions
+$ helm search aodev/action-orchestrator-local
+
+## Install AO
+$ helm install --name=action-orchestrator aodev/action-orchestrator-local --namespace=cisco --version=5.3.0-dev.1010 -f dev-values_update_verified_531.yaml
+
+## install k8s dashboard
+$ kubectl apply -f https://wwwin-github.cisco.com/raw/gist/rajikush/e4480587fdcfa45589cc52693e0aa762/raw/02c8cc2115fe5241bddb5435b90c1e69f1abc827/kubernetes-dashboard.yaml
+
+## Kubernetes dashboard 
+http://localhost:30000
+
+## Get port to access ao (look for orch-ui service)
+$ kubectl get svc -o wide -n cisco
+
+## User credentials to access AO
+username: aotenantadmin@cisco.com
+password: Cisco123!

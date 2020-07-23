@@ -1,0 +1,701 @@
+## Development values for action-orchestrator
+## This is a YAML-formatted file.
+## Declare variables to be passed into your templates.
+##
+## Version: 5.2.0-3
+## Date: 19 May 2020
+##
+
+ad-amqp:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-aws:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-ccs:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-core:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-email:
+  enabled: true
+  replicaCount: 1
+  persistence:
+    enabled: true
+    size: 20Gi
+    #storageClass: ssd
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-gcp:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-git:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-javacore:
+  enabled: true
+  enableProbes: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-kafka:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-meraki:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-psc:
+  enabled: true
+  enableProbes: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-python3:
+  enabled: false
+  enableProbes: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-snmp:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-terminal:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-terraform:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-webhook:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-webservice:
+  enabled: true
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ad-windows:
+  enabled: true
+  replicaCount: 1
+  enableProbes: false
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+ao-post-install-hook:
+  redisSecretName: action-orchestrator-redis-secret
+
+
+ao-pre-delete-hook:
+  jwtSecretName: action-orchestrator-jwt-secret
+  redisMasterPvcName: redis-data-action-orchestrator-pers-redis-master-0
+
+
+be-ao-proxy:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+  #
+  # Uncomment this section to set the CIDR of the incoming traffic
+  #networkPolicy:
+  #  ipRange: 172.1.1.2/32   # CIDR for the list of whitelisted IP addresses
+
+be-ao-remote-mgr:
+  enabled: false
+  replicaCount: 1
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+be-bootstrap:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+    nat_disabled: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-console:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #service:
+  #  type: NodePort
+  #  # To use a fixed node port, uncomment lines below.
+  #  #http:
+  #  #  nodePort: 31006
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-event:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-importexport:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-lds:
+  replicaCount: 1
+  arangodb:
+    scheme: https
+    server: 'action-orchestrator-pers-arangodb:8529'
+    secretName: action-orchestrator-pers-arangodb-jwt
+    secretKey: token
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-orchestrator:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-rbac:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+    nat_disabled: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+be-schedule:
+  replicaCount: 1
+  env:
+    enable_grpc_tls: true
+  redis:
+    masterAddress: 'action-orchestrator-pers-redis-master:6379'
+    secretName: action-orchestrator-redis-secret
+    secretKey: redis-password
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+orch-ui:
+  replicaCount: 1
+  enableHttps: true
+  appName: 'Action Orchestrator'
+  appDescription: 'Orchestrate and automate CloudCenter actions.'
+  productId: 'action-orchestrator'
+  standaloneAuth:
+    defaultPassword: Cisco123!
+  service:
+    type: NodePort
+    # To use a fixed port, uncomment line below.
+    #nodePort: 31080
+  #affinity: {}
+  #nodeSelector:
+  #  keyname: value
+  #resources:
+  #  requests:
+  #    memory: "128Mi"
+  #    cpu: "100m"
+  #  limits:
+  #    memory: "512Mi"
+  #    cpu: "400m"
+  #tolerations: []
+
+
+pers-arangodb:
+  arangoSpec:
+    mode: Single
+    environment: Development
+    #externalAccess:
+    #  type: NodePort
+    #  nodePort: 31001
+    tls:
+      caSecretName: ca-key-pair
+    #
+    # Cluster only...
+    #
+    agents:
+      count: 3
+      ## Uncomment lines below to specify nodeSelector
+      #nodeSelector:
+      #  px/enabled: 'true'
+      volumeClaimTemplate:
+        spec:
+          resources:
+            requests:
+              storage: 10Gi
+          ## Uncomment line below to specify storage class name
+          #storageClassName: ssd
+    dbservers:
+      count: 3
+      ## Uncomment lines below to specify nodeSelector
+      #nodeSelector:
+      #  px/enabled: 'true'
+      volumeClaimTemplate:
+        spec:
+          resources:
+            requests:
+              storage: 30Gi
+          ## Uncomment line below to specify storage class name
+          #storageClassName: ssd
+    coordinators:
+      count: 3
+      ## Uncomment lines below to specify nodeSelector
+      #nodeSelector:
+      #  px/enabled: 'true'
+    #
+    # Single server only...
+    #
+    single:
+      volumeClaimTemplate:
+        spec:
+          resources:
+            requests:
+              storage: 30Gi
+          ## Uncomment line below to specify storage class name
+          #storageClassName: ssd
+
+
+pers-kafka-ha:
+  enabled: true
+  environment: Development  # Environment of Deployment, Development/ Production
+  replicas: 3
+  #nodeSelector:
+  #  px/enabled: "true"
+  persistence:
+    size: 30Gi
+    #storageClass: ssd
+  pers-zookeeper:
+    environment: Development  # Environment of Deployment, Development/ Production
+    replicaCount: 3
+    #nodeSelector:
+    #  px/enabled: "true"
+    persistence:
+      size: 10Gi
+      #storageClass: ssd
+
+
+pers-redis:
+  cluster:
+    enabled: false
+    slaveCount: 0
+  existingSecret: action-orchestrator-redis-secret
+  image:
+    tag: 5.0.3-r38
+  master:
+    #affinity: {}
+    #nodeSelector:
+    #  px/enabled: "true"
+    #resources:
+    #  requests:
+    #    memory: 256Mi
+    #    cpu: 100m
+    #tolerations: []
+    persistence:
+      size: 10Gi
+      #storageClass: ssd
+    livenessProbe:
+      enabled: true
+    readinessProbe:
+      enabled: true
+  #slave:
+  #  #affinity: {}
+  #  #nodeSelector:
+  #  #  px/enabled: "true"
+  #  #resources:
+  #  #  requests:
+  #  #    memory: 256Mi
+  #  #    cpu: 100m
+  #  #tolerations: []
+  #
+  volumePermissions:
+    image:
+      tag: stretch
+  configmap: |-
+    # maxmemory-policy volatile-lru
+    appendonly yes
+
+
+suite-common:
+  #suite-cryptoservice:
+  #  #affinity: {}
+  #  #nodeSelector:
+  #  #  keyname: value
+  #  #tolerations: []
+  #suite-jwt-keys:
+  #  #affinity: {}
+  #  #nodeSelector:
+  #  #  keyname: value
+  #  #tolerations: []
+  suite-postgresql:
+    #affinity: {}
+    #nodeSelector:
+    #  keyname: value
+    #tolerations: []
+    persistence:
+      size: 20Gi
+      #storageClass: ssd
+
+
+##
+## Global configuration
+##
+global:
+  #registry: devhub-docker.cisco.com
+  #aoRepository: nextgen-cpo-docker-dev-local
+  #imagePullSecret: suite-image-pull-secret
+
+  # Run AO in standalone mode.
+  standaloneMode: true
+  useStandaloneAuth: true
+
+  # Integration type
+  integration: Standalone
