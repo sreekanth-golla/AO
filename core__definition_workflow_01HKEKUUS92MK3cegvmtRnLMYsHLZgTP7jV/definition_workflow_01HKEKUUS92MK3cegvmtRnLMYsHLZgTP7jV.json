@@ -1,0 +1,50 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01HKEKUUS92MK3cegvmtRnLMYsHLZgTP7jV",
+    "name": "ToUpper Test",
+    "title": "ToUpper Test",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": null,
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "description": "First workflow to test git integration with AO",
+      "display_name": "ToUpper Test",
+      "runtime_user": {
+        "override_target_runtime_user": false,
+        "specify_on_workflow_start": false,
+        "target_default": true
+      },
+      "target": {
+        "execute_on_target_group": false,
+        "execute_on_workflow_target": false,
+        "no_target": true,
+        "specify_on_workflow_start": false
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01HKELD7Y0L3H6mpwpountIT6CS1OUUSiyE",
+        "name": "To Upper",
+        "title": "To Upper",
+        "type": "core.string2upper",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "description": "to upper",
+          "display_name": "To Upper",
+          "skip_execution": false,
+          "source": "sreekanth-golla"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  }
+}
